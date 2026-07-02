@@ -193,11 +193,11 @@ function Hero({ go }: { go: (id: string) => void }) {
       </div>
 
       {/* Right — photo (order-2: photo second on mobile) */}
-      <div className="relative order-2 lg:order-2 min-h-[60vw] lg:min-h-0 bg-[#C9941A]/10">
+      <div className="relative order-2 lg:order-2 min-h-[60vw] lg:min-h-0 bg-[#C9941A]/10 overflow-hidden">
         <motion.img
           src={heroImg}
           alt="Sâmela Oliveira, responsável pela Oliveira Contabilidade"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-x-0 top-0 lg:top-10 w-full h-full object-cover"
           style={{ objectPosition: "50% 28%" }}
           initial={{ scale: 1.03 }} animate={{ scale: 1 }}
           transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
