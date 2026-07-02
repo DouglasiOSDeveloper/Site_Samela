@@ -12,7 +12,7 @@ import heroImg   from "../imports/image.png"
 import laptopImg from "../imports/image-1.png"
 import armsImg   from "../imports/image-2.png"
 import leafIcon  from "../imports/image-3.png"
-import logoImg   from "../imports/image-4.png"
+import logoImg   from "../imports/logo-oliveira-cropped.png"
 
 // ─── Primitives ──────────────────────────────────────────────────────────────
 
@@ -102,9 +102,9 @@ function Header({ go }: { go: (id: string) => void }) {
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-[#F7F3EC]/97 backdrop-blur-md ${
       scrolled ? "shadow-[0_1px_0_rgba(201,148,26,0.14)]" : "shadow-[0_1px_0_rgba(201,148,26,0.06)]"
     }`}>
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-2.5 flex items-center justify-between">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-0 min-h-[5.25rem] flex items-center justify-between">
         <button onClick={() => go("inicio")} aria-label="Início" className="shrink-0">
-          <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-16 w-auto" />
+          <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-9 sm:h-10 md:h-11 w-auto" />
         </button>
 
         <nav className="hidden lg:flex items-center gap-7">
@@ -853,7 +853,7 @@ function Footer({ go }: { go: (id: string) => void }) {
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
         <div className="grid lg:grid-cols-[1fr_auto_auto] gap-10 lg:gap-20 mb-10">
           <div>
-            <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-20 w-auto mb-5" />
+            <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-12 sm:h-14 w-auto mb-5" />
             <p className="text-white/32 text-[13px] leading-relaxed max-w-[260px]">
               Consultoria contábil e financeira para empresas e pessoas físicas que buscam clareza, organização e segurança.
             </p>
