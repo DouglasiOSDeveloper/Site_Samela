@@ -197,7 +197,7 @@ function Hero({ go }: { go: (id: string) => void }) {
         <motion.img
           src={heroImg}
           alt="Sâmela Oliveira, responsável pela Oliveira Contabilidade"
-          className="absolute inset-x-0 top-0 lg:top-10 w-full h-full object-cover"
+          className="absolute inset-x-0 top-0 lg:top-[5.25rem] w-full h-full object-cover"
           style={{ objectPosition: "50% 28%" }}
           initial={{ scale: 1.03 }} animate={{ scale: 1 }}
           transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
