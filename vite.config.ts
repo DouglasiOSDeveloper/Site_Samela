@@ -17,6 +17,9 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
+  // GitHub Pages publishes this project under /Site_Samela/.
+  // Without this base path, Vite emits assets as /assets/... and the page loads blank.
+  base: '/Site_Samela/',
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
