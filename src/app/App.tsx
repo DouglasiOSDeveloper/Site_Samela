@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, type FormEvent } from "react"
 import { motion, useInView } from "motion/react"
 import {
   Menu, X, ChevronDown, Mail, Instagram, ArrowRight,
@@ -13,6 +13,43 @@ import laptopImg from "../imports/image-1.png"
 import armsImg   from "../imports/image-2.png"
 import leafIcon  from "../imports/image-3.png"
 import logoImg   from "../imports/logo-oliveira-cropped.png"
+
+const CONTACT_EMAIL = "oliveirasantosconsultoria1101@gmail.com"
+const WHATSAPP_NUMBER = "5561995647701"
+const WHATSAPP_DISPLAY = "+55 (61) 99564-7701"
+
+const defaultWhatsAppMessage =
+  "Olá, Sâmela! Vim pelo site da Oliveira Contabilidade e gostaria de solicitar um atendimento."
+
+const defaultEmailSubject = "Solicitação de atendimento - Oliveira Contabilidade"
+const defaultEmailBody =
+  "Olá, Sâmela! Vim pelo site da Oliveira Contabilidade e gostaria de solicitar um atendimento.\n\nAguardo seu retorno.\n\nObrigado(a)."
+
+const createWhatsAppHref = (message: string = defaultWhatsAppMessage) =>
+  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+
+const createMailtoHref = (subject = defaultEmailSubject, body = defaultEmailBody) =>
+  `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+
+const formatPhone = (value: string) => {
+  const digits = value.replace(/\D/g, "").slice(0, 11)
+  if (!digits) return ""
+  if (digits.length <= 2) return `(${digits}`
+  if (digits.length <= 6) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`
+  if (digits.length <= 10) {
+    return `(${digits.slice(0, 2)}) ${digits.slice(2, 6)}-${digits.slice(6)}`
+  }
+  return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`
+}
+
+const atendimentoLabels: Record<string, string> = {
+  empresa: "Empresa",
+  pf: "Pessoa física",
+  bpo: "BPO financeiro",
+  irpf: "Imposto de Renda",
+  carne: "Carnê-Leão",
+  outro: "Outro",
+}
 
 // ─── Primitives ──────────────────────────────────────────────────────────────
 
@@ -104,7 +141,7 @@ function Header({ go }: { go: (id: string) => void }) {
     }`}>
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-0 min-h-[5.25rem] flex items-center justify-between">
         <button onClick={() => go("inicio")} aria-label="Início" className="shrink-0">
-          <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-9 sm:h-10 md:h-11 w-auto" />
+          <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-12 sm:h-[3.25rem] md:h-14 w-auto" />
         </button>
 
         <nav className="hidden lg:flex items-center gap-7">
@@ -733,6 +770,28 @@ function Contact() {
 
   const field = `w-full bg-white/[0.04] border border-white/[0.12] focus:border-[#C9941A]/55 rounded-xl px-5 py-3.5 text-white placeholder-white/22 text-[14px] outline-none transition-colors duration-200`
 
+  const handlePhoneChange = (value: string) => {
+    setForm({ ...form, phone: formatPhone(value) })
+  }
+
+  const buildDiagnosisMessage = () => {
+    const lines = [
+      "Olá, Sâmela! Vim pelo site da Oliveira Contabilidade e gostaria de solicitar um diagnóstico inicial.",
+      form.name.trim() && `Nome: ${form.name.trim()}`,
+      form.phone.trim() && `Telefone/WhatsApp: ${form.phone.trim()}`,
+      form.email.trim() && `E-mail: ${form.email.trim()}`,
+      form.type && `Tipo de atendimento: ${atendimentoLabels[form.type] ?? form.type}`,
+      form.message.trim() && `Mensagem: ${form.message.trim()}`,
+    ]
+
+    return lines.filter(Boolean).join("\n")
+  }
+
+  const handleDiagnosisSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    window.location.href = createWhatsAppHref(buildDiagnosisMessage())
+  }
+
   return (
     <section id="contato" className="bg-[#0D0B08] py-20 lg:py-28 relative overflow-hidden">
       <GoldLine className="absolute top-0 inset-x-0" />
@@ -753,7 +812,7 @@ function Contact() {
 
         <div className="grid lg:grid-cols-[1fr_360px] gap-10 xl:gap-16 items-start">
           <FadeIn>
-            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-5" onSubmit={handleDiagnosisSubmit}>
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-white/45 text-[11px] tracking-[0.18em] uppercase mb-2">Nome completo</label>
@@ -767,7 +826,7 @@ function Contact() {
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-white/45 text-[11px] tracking-[0.18em] uppercase mb-2">Telefone / WhatsApp</label>
-                  <input type="tel" value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} className={field} placeholder="(00) 00000-0000" />
+                  <input type="tel" inputMode="tel" value={form.phone} onChange={e => handlePhoneChange(e.target.value)} className={field} placeholder="(61) 99564-7701" maxLength={15} />
                 </div>
                 <div>
                   <label className="block text-white/45 text-[11px] tracking-[0.18em] uppercase mb-2">Tipo de atendimento</label>
@@ -824,9 +883,13 @@ function Contact() {
                 </div>
               </div>
               <div className="flex flex-col gap-3">
-                <GhostBtn href="mailto:oliveirasantosconsultoria1101@gmail.com" dark className="w-full">
+                <GhostBtn href={createMailtoHref()} dark className="w-full">
                   <Mail size={13} />
                   Enviar e-mail
+                </GhostBtn>
+                <GhostBtn href={createWhatsAppHref()} target="_blank" dark className="w-full">
+                  <Smartphone size={13} />
+                  Contato pelo WhatsApp
                 </GhostBtn>
                 <GoldBtn href="https://www.instagram.com/_oliveira.contabilidade_/" target="_blank" className="w-full">
                   <Instagram size={13} />
@@ -853,7 +916,7 @@ function Footer({ go }: { go: (id: string) => void }) {
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
         <div className="grid lg:grid-cols-[1fr_auto_auto] gap-10 lg:gap-20 mb-10">
           <div>
-            <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-12 sm:h-14 w-auto mb-5" />
+            <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-16 sm:h-20 w-auto mb-5" />
             <p className="text-white/32 text-[13px] leading-relaxed max-w-[260px]">
               Consultoria contábil e financeira para empresas e pessoas físicas que buscam clareza, organização e segurança.
             </p>
@@ -873,9 +936,14 @@ function Footer({ go }: { go: (id: string) => void }) {
             <p className="text-[#C9941A] text-[10px] tracking-[0.24em] uppercase font-bold mb-5">Contato</p>
             <div className="flex flex-col gap-3">
               <p className="text-white/38 text-[13px]">Sâmela Oliveira dos Santos</p>
-              <a href="mailto:oliveirasantosconsultoria1101@gmail.com"
+              <a href={createMailtoHref()}
                 className="text-white/38 hover:text-[#C9941A] text-[13px] transition-colors break-all leading-relaxed">
                 oliveirasantosconsultoria1101@gmail.com
+              </a>
+              <a href={createWhatsAppHref()} target="_blank" rel="noopener noreferrer"
+                className="text-white/38 hover:text-[#C9941A] text-[13px] transition-colors flex items-center gap-2">
+                <Smartphone size={12} />
+                {WHATSAPP_DISPLAY}
               </a>
               <a href="https://www.instagram.com/_oliveira.contabilidade_/" target="_blank" rel="noopener noreferrer"
                 className="text-white/38 hover:text-[#C9941A] text-[13px] transition-colors flex items-center gap-2">
