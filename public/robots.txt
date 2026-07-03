@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://douglasiosdeveloper.github.io/Site_Samela/sitemap.xml
