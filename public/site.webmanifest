@@ -19,7 +19,7 @@
   "theme_color": "#0D0B08",
   "background_color": "#F7F3EC",
   "display": "standalone",
-  "start_url": "/Site_Samela/",
-  "scope": "/Site_Samela/",
+  "start_url": "/",
+  "scope": "/",
   "lang": "pt-BR"
 }
