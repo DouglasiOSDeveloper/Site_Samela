@@ -259,33 +259,19 @@ function TrustStrip() {
     "IRPF, BPO e rotina contábil",
   ]
 
-  const track = [...items, ...items]
-
   return (
-    <div className="bg-[#0D0B08] border-y border-[#C9941A]/10 py-7 overflow-hidden">
-      <style>{`
-        @keyframes trust-marquee {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        .trust-track {
-          animation: trust-marquee 28s linear infinite;
-        }
-        .trust-track:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
-      <div className="flex">
-        <div className="trust-track flex shrink-0 items-center">
-          {track.map((item, i) => (
-            <div key={i} className="flex items-center shrink-0">
-              <span className="text-white/68 text-[13px] font-medium tracking-wide whitespace-nowrap px-8 lg:px-10">
-                {item}
-              </span>
+    <div className="bg-[#0D0B08] border-y border-[#C9941A]/10 py-8">
+      <div className="flex flex-wrap justify-center items-center gap-y-4">
+        {items.map((item, i) => (
+          <div key={i} className="flex items-center shrink-0">
+            <span className="text-white/68 text-[13px] font-medium tracking-wide whitespace-nowrap px-8 lg:px-10">
+              {item}
+            </span>
+            {i < items.length - 1 ? (
               <div className="w-px h-4 bg-[#C9941A]/22 shrink-0" />
-            </div>
-          ))}
-        </div>
+            ) : null}
+          </div>
+        ))}
       </div>
     </div>
   )
