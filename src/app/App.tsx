@@ -8,7 +8,6 @@ import {
 } from "lucide-react"
 import * as Accordion from "@radix-ui/react-accordion"
 
-import heroImg   from "../imports/image.png"
 import laptopImg from "../imports/image-1.png"
 import armsImg   from "../imports/image-2.png"
 import leafIcon  from "../imports/image-3.png"
@@ -232,10 +231,10 @@ function Hero({ go }: { go: (id: string) => void }) {
       {/* Right — photo (order-2: photo second on mobile) */}
       <div className="relative order-2 lg:order-2 min-h-[60vw] lg:min-h-0 bg-[#C9941A]/10 overflow-hidden">
         <motion.img
-          src={heroImg}
+          src={armsImg}
           alt="Sâmela Oliveira, responsável pela Oliveira Contabilidade"
           className="absolute inset-x-0 top-0 lg:top-[5.25rem] w-full h-full object-cover"
-          style={{ objectPosition: "50% 28%" }}
+          style={{ objectPosition: "50% 24%" }}
           initial={{ scale: 1.03 }} animate={{ scale: 1 }}
           transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
         />
