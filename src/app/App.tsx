@@ -8,10 +8,11 @@ import {
 } from "lucide-react"
 import * as Accordion from "@radix-ui/react-accordion"
 
-import laptopImg from "../imports/image-1.png"
-import armsImg   from "../imports/image-2.png"
-import leafIcon  from "../imports/image-3.png"
+import laptopImg from "../imports/image-1.webp"
+import armsImg   from "../imports/image-2.webp"
+import leafIcon  from "../imports/image-3.webp"
 import logoImg   from "../imports/logo-oliveira-cropped.png"
+import { contentPages } from "./seo/contentPages"
 
 const CONTACT_EMAIL = "oliveirasantosconsultoria1101@gmail.com"
 const WHATSAPP_NUMBER = "5561995647701"
@@ -118,7 +119,7 @@ const GhostBtn = ({
 
 // ─── Header ──────────────────────────────────────────────────────────────────
 
-function Header({ go }: { go: (id: string) => void }) {
+export function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -130,8 +131,8 @@ function Header({ go }: { go: (id: string) => void }) {
   }, [])
 
   const nav = [
-    ["Início", "inicio"], ["Serviços", "servicos"], ["Sobre", "sobre"],
-    ["Como funciona", "como-funciona"], ["Dúvidas", "duvidas"], ["Contato", "contato"],
+    ["Início", "/#inicio"], ["Serviços", "/#servicos"], ["Conteúdos", "/conteudos/"],
+    ["Sobre", "/#sobre"], ["Como funciona", "/#como-funciona"], ["Dúvidas", "/#duvidas"], ["Contato", "/#contato"],
   ]
 
   return (
@@ -139,21 +140,21 @@ function Header({ go }: { go: (id: string) => void }) {
       scrolled ? "shadow-[0_1px_0_rgba(201,148,26,0.14)]" : "shadow-[0_1px_0_rgba(201,148,26,0.06)]"
     }`}>
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-0 min-h-[5.25rem] flex items-center justify-between">
-        <button onClick={() => go("inicio")} aria-label="Início" className="shrink-0">
-          <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-12 sm:h-[3.25rem] md:h-14 w-auto" />
-        </button>
+        <a href="/" aria-label="Início" className="shrink-0">
+          <img src={logoImg} alt="Logo Oliveira Contabilidade" width={1862} height={702} decoding="async" className="h-12 sm:h-[3.25rem] md:h-14 w-auto" />
+        </a>
 
         <nav className="hidden lg:flex items-center gap-7">
           {nav.map(([label, id]) => (
-            <button key={id} onClick={() => go(id)}
+            <a key={id} href={id}
               className="text-[12.5px] font-medium text-[#3D3028] hover:text-[#C9941A] transition-colors tracking-wide">
               {label}
-            </button>
+            </a>
           ))}
         </nav>
 
         <div className="hidden lg:block">
-          <GoldBtn onClick={() => go("contato")} className="text-[12px] px-5 py-[11px]">
+          <GoldBtn href="/#contato" className="text-[12px] px-5 py-[11px]">
             Solicitar diagnóstico
             <ArrowRight size={13} />
           </GoldBtn>
@@ -167,12 +168,12 @@ function Header({ go }: { go: (id: string) => void }) {
       {open && (
         <div className="lg:hidden bg-[#F7F3EC]/99 border-t border-[#C9941A]/12 px-6 py-5 flex flex-col gap-0.5">
           {nav.map(([label, id]) => (
-            <button key={id} onClick={() => { go(id); setOpen(false) }}
+            <a key={id} href={id} onClick={() => setOpen(false)}
               className="text-left py-3 text-[15px] font-medium text-[#3D3028] hover:text-[#C9941A] transition-colors border-b border-[#C9941A]/8 last:border-0">
               {label}
-            </button>
+            </a>
           ))}
-          <GoldBtn onClick={() => { go("contato"); setOpen(false) }} className="mt-4 w-full">
+          <GoldBtn href="/#contato" className="mt-4 w-full">
             Solicitar diagnóstico inicial
             <ArrowRight size={13} />
           </GoldBtn>
@@ -190,7 +191,7 @@ function Hero({ go }: { go: (id: string) => void }) {
       {/* Left — text (order-1: text first on mobile) */}
       <div className="bg-[#F7F3EC] relative flex items-center order-1 lg:order-1 pt-28 pb-16 lg:py-0">
         <div className="absolute bottom-0 left-0 pointer-events-none select-none">
-          <img src={leafIcon} alt="" aria-hidden className="w-64 h-64 opacity-[0.04]" />
+          <img src={leafIcon} alt="" aria-hidden width={1024} height={1024} decoding="async" className="w-64 h-64 opacity-[0.04]" />
         </div>
 
         <div className="relative w-full px-8 md:px-12 lg:pl-[max(3rem,calc((100vw-1400px)/2+3rem))] lg:pr-14 xl:pr-20">
@@ -206,10 +207,10 @@ function Hero({ go }: { go: (id: string) => void }) {
           <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}>
             <p className="text-[#5C5048] text-[16px] leading-relaxed mb-2">
-              A Oliveira Contabilidade cuida da sua rotina contábil, fiscal, tributária e financeira com clareza, organização e acompanhamento próximo.
+              A Oliveira Contabilidade oferece contabilidade empresarial, BPO financeiro, serviços tributários e societários, departamento pessoal, IRPF e Carnê-Leão para empresas, autônomos e pessoas físicas.
             </p>
             <p className="text-[#7A6E65] text-[14.5px] leading-relaxed mb-8">
-              Tenha mais tranquilidade para tomar decisões, cumprir obrigações e manter sua vida financeira em ordem.
+              Organize obrigações, informações financeiras e decisões com acompanhamento próximo e comunicação clara.
             </p>
           </motion.div>
 
@@ -233,6 +234,11 @@ function Hero({ go }: { go: (id: string) => void }) {
         <motion.img
           src={armsImg}
           alt="Sâmela Oliveira, responsável pela Oliveira Contabilidade"
+          width={1536}
+          height={1024}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-x-0 top-0 lg:top-[5.25rem] w-full h-full object-cover"
           style={{ objectPosition: "50% 24%" }}
           initial={{ scale: 1.03 }} animate={{ scale: 1 }}
@@ -321,6 +327,11 @@ function ForWhom({ go }: { go: (id: string) => void }) {
             </FadeIn>
           ))}
         </div>
+        <div className="mt-8 flex justify-end">
+          <a href="/contabilidade-para-profissionais-liberais/" className="inline-flex items-center gap-2 text-[#A87618] text-[13px] font-semibold hover:text-[#7C5B13] transition-colors">
+            Contabilidade para profissionais liberais <ArrowRight size={14} />
+          </a>
+        </div>
       </div>
     </section>
   )
@@ -330,26 +341,26 @@ function ForWhom({ go }: { go: (id: string) => void }) {
 
 function Services({ go }: { go: (id: string) => void }) {
   const services = [
-    { icon: <Briefcase size={18} />, title: "Societário", featured: false, badge: null,
+    { slug: "societario", icon: <Briefcase size={18} />, title: "Societário", featured: false, badge: null,
       text: "Abertura, alteração, regularização e encerramento de empresas, com orientação para escolher o melhor caminho jurídico e operacional." },
-    { icon: <Users size={18} />, title: "Departamento pessoal", featured: false, badge: null,
+    { slug: "departamento-pessoal", icon: <Users size={18} />, title: "Departamento pessoal", featured: false, badge: null,
       text: "Gestão de admissões, folha de pagamento, férias, rescisões, encargos e obrigações trabalhistas." },
-    { icon: <Calculator size={18} />, title: "Contabilidade", featured: true, badge: null,
+    { slug: "contabilidade", icon: <Calculator size={18} />, title: "Contabilidade", featured: true, badge: null,
       text: "Rotina contábil completa, demonstrações, obrigações acessórias e acompanhamento para manter sua empresa em conformidade." },
-    { icon: <DollarSign size={18} />, title: "BPO financeiro", featured: true, badge: "Gestão estratégica",
+    { slug: "bpo-financeiro", icon: <DollarSign size={18} />, title: "BPO financeiro", featured: true, badge: "Gestão estratégica",
       text: "Organização de contas a pagar, contas a receber, fluxo de caixa, conciliações e relatórios para tomada de decisão." },
-    { icon: <Shield size={18} />, title: "Tributário", featured: false, badge: "Mais segurança fiscal",
+    { slug: "tributario", icon: <Shield size={18} />, title: "Tributário", featured: false, badge: "Mais segurança fiscal",
       text: "Apuração de tributos, análise fiscal, orientação tributária e suporte para reduzir riscos e melhorar a previsibilidade." },
-    { icon: <FileSpreadsheet size={18} />, title: "Imposto de Renda Pessoa Física", featured: true, badge: null,
+    { slug: "imposto-de-renda-pessoa-fisica", icon: <FileSpreadsheet size={18} />, title: "Imposto de Renda Pessoa Física", featured: true, badge: null,
       text: "Declaração de IRPF com análise cuidadosa de rendimentos, bens, deduções, investimentos e possíveis pontos de atenção." },
-    { icon: <Receipt size={18} />, title: "Carnê-Leão", featured: false, badge: null,
+    { slug: "carne-leao", icon: <Receipt size={18} />, title: "Carnê-Leão", featured: false, badge: null,
       text: "Apuração mensal para profissionais autônomos, liberais e pessoas físicas que recebem rendimentos sujeitos ao recolhimento obrigatório." },
   ]
 
   return (
     <section id="servicos" className="bg-[#0D0B08] py-24 lg:py-32 relative overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-end pointer-events-none select-none">
-        <img src={leafIcon} alt="" aria-hidden className="w-[520px] h-[520px] opacity-[0.03]" />
+        <img src={leafIcon} alt="" aria-hidden width={1024} height={1024} loading="lazy" decoding="async" className="w-[520px] h-[520px] opacity-[0.03]" />
       </div>
 
       <div className="relative max-w-[1400px] mx-auto px-8 lg:px-12">
@@ -369,7 +380,7 @@ function Services({ go }: { go: (id: string) => void }) {
 
         {services.map((s, i) => (
           <FadeIn key={i} delay={(i % 4) * 0.06}>
-            <div className={`group grid grid-cols-[1.5rem_1fr] lg:grid-cols-[1.5rem_1fr_2fr] gap-x-5 lg:gap-x-10 items-start py-7 border-b border-white/[0.07] -mx-8 lg:-mx-12 px-8 lg:px-12 transition-colors duration-200 cursor-default ${
+            <a href={`/${s.slug}/`} aria-label={`Saiba mais sobre ${s.title}`} className={`group grid grid-cols-[1.5rem_1fr] lg:grid-cols-[1.5rem_1fr_2fr] gap-x-5 lg:gap-x-10 items-start py-7 border-b border-white/[0.07] -mx-8 lg:-mx-12 px-8 lg:px-12 transition-colors duration-200 ${
               s.featured
                 ? "hover:bg-[#C9941A]/[0.06]"
                 : "hover:bg-white/[0.018]"
@@ -397,8 +408,11 @@ function Services({ go }: { go: (id: string) => void }) {
                 <p className="text-white/55 text-[13.5px] leading-relaxed lg:hidden">{s.text}</p>
               </div>
               {/* Desktop desc */}
-              <p className="hidden lg:block text-white/55 text-[13.5px] leading-relaxed">{s.text}</p>
-            </div>
+              <div className="hidden lg:flex items-start gap-4">
+                <p className="text-white/55 text-[13.5px] leading-relaxed flex-1">{s.text}</p>
+                <ArrowRight size={15} className="text-[#C9941A]/60 group-hover:text-[#C9941A] group-hover:translate-x-1 transition-all mt-0.5 shrink-0" />
+              </div>
+            </a>
           </FadeIn>
         ))}
 
@@ -413,13 +427,132 @@ function Services({ go }: { go: (id: string) => void }) {
   )
 }
 
+// ─── Service Hub / SEO internal linking ─────────────────────────────────────
+
+function ServiceHub() {
+  const groups = [
+    {
+      icon: <Building2 size={18} />,
+      title: "Empresa e rotina contábil",
+      text: "Contabilidade empresarial, folha de pagamento e organização tributária para manter informações e obrigações em dia.",
+      links: [
+        ["Contabilidade empresarial", "/contabilidade/"],
+        ["Departamento pessoal e folha", "/departamento-pessoal/"],
+        ["Consultoria tributária", "/tributario/"],
+      ],
+    },
+    {
+      icon: <DollarSign size={18} />,
+      title: "Estrutura e gestão financeira",
+      text: "Abertura e regularização de empresa, BPO financeiro, contas a pagar e receber, conciliações e fluxo de caixa.",
+      links: [
+        ["BPO financeiro", "/bpo-financeiro/"],
+        ["Societário e abertura de empresa", "/societario/"],
+        ["Contabilidade para empresas", "/contabilidade/"],
+      ],
+    },
+    {
+      icon: <UserCheck size={18} />,
+      title: "Pessoa física e profissionais liberais",
+      text: "IRPF, Carnê-Leão e organização contábil para autônomos e profissionais liberais em diferentes momentos da atividade.",
+      links: [
+        ["Imposto de Renda Pessoa Física", "/imposto-de-renda-pessoa-fisica/"],
+        ["Carnê-Leão para autônomos", "/carne-leao/"],
+        ["Contabilidade para profissionais liberais", "/contabilidade-para-profissionais-liberais/"],
+      ],
+    },
+  ]
+
+  return (
+    <section className="bg-[#F7F3EC] py-20 lg:py-24 border-b border-[#C9941A]/10" aria-labelledby="encontre-servico">
+      <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+        <FadeIn>
+          <div className="max-w-3xl mb-11">
+            <Label>Encontre por necessidade</Label>
+            <h2 id="encontre-servico" className="font-display text-[1.9rem] md:text-[2.35rem] lg:text-[2.6rem] font-semibold text-[#0D0B08] leading-tight mb-4">
+              Acesse diretamente o serviço que combina com sua rotina.
+            </h2>
+            <p className="text-[#6B5E54] text-[15.5px] leading-relaxed">
+              Explore soluções de contabilidade, gestão financeira, tributário, societário e atendimento para pessoa física com páginas específicas para cada necessidade.
+            </p>
+          </div>
+        </FadeIn>
+
+        <div className="grid lg:grid-cols-3 gap-5">
+          {groups.map((group, index) => (
+            <FadeIn key={group.title} delay={index * 0.08}>
+              <article className="h-full bg-white border border-[#E8E2D9] rounded-2xl p-7 hover:border-[#C9941A]/35 hover:shadow-[0_10px_34px_rgba(201,148,26,0.07)] transition-all duration-300">
+                <div className="w-10 h-10 rounded-full bg-[#C9941A]/10 text-[#A87618] flex items-center justify-center mb-5">{group.icon}</div>
+                <h3 className="font-display text-[19px] font-semibold text-[#0D0B08] mb-3">{group.title}</h3>
+                <p className="text-[#6B5E54] text-[13.5px] leading-relaxed mb-6">{group.text}</p>
+                <nav aria-label={`Serviços de ${group.title}`} className="flex flex-col gap-3">
+                  {group.links.map(([label, href]) => (
+                    <a key={href + label} href={href} className="group/link inline-flex items-center justify-between gap-3 text-[#4E433C] hover:text-[#A87618] text-[13px] font-semibold transition-colors">
+                      <span>{label}</span>
+                      <ArrowRight size={13} className="text-[#C9941A] group-hover/link:translate-x-1 transition-transform" />
+                    </a>
+                  ))}
+                </nav>
+              </article>
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function ContentPreview() {
+  const featured = contentPages.slice(0, 3)
+
+  return (
+    <section className="bg-white py-20 lg:py-24 border-b border-[#C9941A]/10" aria-labelledby="conteudos-uteis">
+      <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+        <FadeIn>
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
+            <div className="max-w-3xl">
+              <Label>Conteúdos úteis</Label>
+              <h2 id="conteudos-uteis" className="font-display text-[1.9rem] md:text-[2.35rem] lg:text-[2.6rem] font-semibold text-[#0D0B08] leading-tight mb-4">
+                Entenda melhor decisões contábeis, fiscais e financeiras.
+              </h2>
+              <p className="text-[#6B5E54] text-[15.5px] leading-relaxed">
+                Guias para empresas, autônomos e profissionais liberais se organizarem antes de uma análise individual.
+              </p>
+            </div>
+            <a href="/conteudos/" className="inline-flex items-center gap-2 text-[#A87618] text-[13px] font-semibold shrink-0">
+              Ver todos os conteúdos <ArrowRight size={14} />
+            </a>
+          </div>
+        </FadeIn>
+
+        <div className="grid md:grid-cols-3 gap-5">
+          {featured.map((article, index) => (
+            <FadeIn key={article.slug} delay={index * 0.08}>
+              <article className="h-full bg-[#F7F3EC] border border-[#E8E2D9] rounded-2xl p-6 hover:border-[#C9941A]/40 transition-colors">
+                <p className="text-[#A87618] text-[10px] tracking-[0.2em] uppercase font-bold mb-3">{article.eyebrow}</p>
+                <h3 className="font-display text-[19px] font-semibold text-[#0D0B08] leading-snug mb-3">
+                  <a href={`/conteudos/${article.slug}/`} className="hover:text-[#A87618] transition-colors">{article.title}</a>
+                </h3>
+                <p className="text-[#6B5E54] text-[13px] leading-relaxed mb-5">{article.metaDescription}</p>
+                <a href={`/conteudos/${article.slug}/`} className="inline-flex items-center gap-2 text-[#A87618] text-[12px] font-semibold">
+                  Ler conteúdo <ArrowRight size={13} />
+                </a>
+              </article>
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
 // ─── About ────────────────────────────────────────────────────────────────────
 
 function About({ go }: { go: (id: string) => void }) {
   return (
     <section id="sobre" className="bg-[#F7F3EC] py-24 lg:py-28 relative overflow-hidden">
       <div className="absolute top-0 right-0 pointer-events-none select-none">
-        <img src={leafIcon} alt="" aria-hidden className="w-72 h-72 opacity-[0.04]" />
+        <img src={leafIcon} alt="" aria-hidden width={1024} height={1024} loading="lazy" decoding="async" className="w-72 h-72 opacity-[0.04]" />
       </div>
 
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12 relative">
@@ -432,6 +565,10 @@ function About({ go }: { go: (id: string) => void }) {
                 <img
                   src={armsImg}
                   alt="Sâmela Oliveira, responsável pela Oliveira Contabilidade, de braços cruzados"
+                  width={1536}
+                  height={1024}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full object-cover rounded-2xl"
                   style={{ aspectRatio: "3/4", objectPosition: "50% 10%" }}
                 />
@@ -495,7 +632,7 @@ function HowItWorks() {
   return (
     <section id="como-funciona" className="bg-[#0D0B08] py-24 lg:py-32 relative overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <img src={leafIcon} alt="" aria-hidden className="w-[640px] h-[640px] opacity-[0.025]" />
+        <img src={leafIcon} alt="" aria-hidden width={1024} height={1024} loading="lazy" decoding="async" className="w-[640px] h-[640px] opacity-[0.025]" />
       </div>
 
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12 relative">
@@ -555,7 +692,7 @@ function CtaSection({ go }: { go: (id: string) => void }) {
     <section className="bg-[#100E0A] py-20 lg:py-24 relative overflow-hidden">
       <GoldLine className="absolute top-0 inset-x-0" />
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <img src={leafIcon} alt="" aria-hidden className="w-[480px] h-[480px] opacity-[0.055]" />
+        <img src={leafIcon} alt="" aria-hidden width={1024} height={1024} loading="lazy" decoding="async" className="w-[480px] h-[480px] opacity-[0.055]" />
       </div>
 
       <div className="relative max-w-[860px] mx-auto px-8 lg:px-12 text-center">
@@ -591,6 +728,10 @@ function DigitalService({ go }: { go: (id: string) => void }) {
               <img
                 src={laptopImg}
                 alt="Sâmela Oliveira, responsável pela Oliveira Contabilidade, trabalhando no notebook"
+                width={1536}
+                height={1024}
+                loading="lazy"
+                decoding="async"
                 className="w-full object-cover rounded-2xl"
               />
             </div>
@@ -654,7 +795,7 @@ function Differentials() {
   return (
     <section className="bg-[#0D0B08] py-20 lg:py-24 relative overflow-hidden">
       <div className="absolute left-0 bottom-0 pointer-events-none select-none">
-        <img src={leafIcon} alt="" aria-hidden className="w-72 h-72 opacity-[0.03]" />
+        <img src={leafIcon} alt="" aria-hidden width={1024} height={1024} loading="lazy" decoding="async" className="w-72 h-72 opacity-[0.03]" />
       </div>
 
       <div className="relative max-w-[1400px] mx-auto px-8 lg:px-12">
@@ -781,7 +922,7 @@ function Contact() {
     <section id="contato" className="bg-[#0D0B08] py-20 lg:py-28 relative overflow-hidden">
       <GoldLine className="absolute top-0 inset-x-0" />
       <div className="absolute right-0 bottom-0 pointer-events-none select-none">
-        <img src={leafIcon} alt="" aria-hidden className="w-56 h-56 opacity-[0.04]" />
+        <img src={leafIcon} alt="" aria-hidden width={1024} height={1024} loading="lazy" decoding="async" className="w-56 h-56 opacity-[0.04]" />
       </div>
 
       <div className="relative max-w-[1400px] mx-auto px-8 lg:px-12">
@@ -844,7 +985,7 @@ function Contact() {
           <FadeIn delay={0.14}>
             <div className="bg-white/[0.03] border border-[#C9941A]/16 rounded-2xl p-7">
               <div className="flex items-center gap-4 mb-6">
-                <img src={leafIcon} alt="Ícone da Oliveira Contabilidade" className="w-11 h-11" />
+                <img src={leafIcon} alt="Ícone da Oliveira Contabilidade" width={1024} height={1024} loading="lazy" decoding="async" className="w-11 h-11" />
                 <div>
                   <p className="font-display text-white font-semibold text-[15.5px]">Oliveira Contabilidade</p>
                   <p className="text-white/40 text-[11px] tracking-wide mt-0.5">Consultoria Contábil e Financeira</p>
@@ -891,17 +1032,27 @@ function Contact() {
 
 // ─── Footer ───────────────────────────────────────────────────────────────────
 
-function Footer({ go }: { go: (id: string) => void }) {
+export function Footer() {
   const nav = [
-    ["Início", "inicio"], ["Serviços", "servicos"], ["Sobre", "sobre"],
-    ["Como funciona", "como-funciona"], ["Contato", "contato"],
+    ["Início", "/#inicio"], ["Serviços", "/#servicos"], ["Conteúdos", "/conteudos/"],
+    ["Sobre", "/#sobre"], ["Como funciona", "/#como-funciona"], ["Contato", "/#contato"],
+  ]
+  const serviceNav = [
+    ["Contabilidade", "/contabilidade/"],
+    ["BPO financeiro", "/bpo-financeiro/"],
+    ["Departamento pessoal", "/departamento-pessoal/"],
+    ["Tributário", "/tributario/"],
+    ["Societário", "/societario/"],
+    ["Imposto de Renda", "/imposto-de-renda-pessoa-fisica/"],
+    ["Carnê-Leão", "/carne-leao/"],
+    ["Profissionais liberais", "/contabilidade-para-profissionais-liberais/"],
   ]
   return (
     <footer className="bg-[#080706] border-t border-[#C9941A]/12 pt-14 pb-8">
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
-        <div className="grid lg:grid-cols-[1fr_auto_auto] gap-10 lg:gap-20 mb-10">
+        <div className="grid lg:grid-cols-[1fr_auto_auto_auto] gap-10 lg:gap-14 xl:gap-20 mb-10">
           <div>
-            <img src={logoImg} alt="Logo Oliveira Contabilidade" className="h-16 sm:h-20 w-auto mb-5" />
+            <img src={logoImg} alt="Logo Oliveira Contabilidade" width={1862} height={702} loading="lazy" decoding="async" className="h-16 sm:h-20 w-auto mb-5" />
             <p className="text-white/32 text-[13px] leading-relaxed max-w-[260px]">
               Consultoria contábil e financeira para empresas e pessoas físicas que buscam clareza, organização e segurança.
             </p>
@@ -910,10 +1061,20 @@ function Footer({ go }: { go: (id: string) => void }) {
             <p className="text-[#C9941A] text-[10px] tracking-[0.24em] uppercase font-bold mb-5">Navegação</p>
             <div className="flex flex-col gap-3">
               {nav.map(([label, id]) => (
-                <button key={id} onClick={() => go(id)}
+                <a key={id} href={id}
                   className="text-left text-white/38 hover:text-[#C9941A] text-[13px] transition-colors duration-200">
                   {label}
-                </button>
+                </a>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="text-[#C9941A] text-[10px] tracking-[0.24em] uppercase font-bold mb-5">Serviços</p>
+            <div className="grid grid-cols-2 lg:grid-cols-1 gap-x-6 gap-y-3">
+              {serviceNav.map(([label, href]) => (
+                <a key={href} href={href} className="text-white/38 hover:text-[#C9941A] text-[12.5px] transition-colors duration-200">
+                  {label}
+                </a>
               ))}
             </div>
           </div>
@@ -943,7 +1104,7 @@ function Footer({ go }: { go: (id: string) => void }) {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/20 text-[11px]">© Oliveira Contabilidade. Todos os direitos reservados.</p>
-          <img src={leafIcon} alt="" aria-hidden className="w-5 h-5 opacity-18" />
+          <img src={leafIcon} alt="" aria-hidden width={1024} height={1024} loading="lazy" decoding="async" className="w-5 h-5 opacity-18" />
         </div>
       </div>
     </footer>
@@ -958,11 +1119,13 @@ export default function App() {
 
   return (
     <div className="font-sans overflow-x-hidden">
-      <Header go={go} />
+      <Header />
       <Hero go={go} />
       <TrustStrip />
       <ForWhom go={go} />
       <Services go={go} />
+      <ServiceHub />
+      <ContentPreview />
       <About go={go} />
       <HowItWorks />
       <CtaSection go={go} />
@@ -970,7 +1133,7 @@ export default function App() {
       <Differentials />
       <FAQ go={go} />
       <Contact />
-      <Footer go={go} />
+      <Footer />
     </div>
   )
 }

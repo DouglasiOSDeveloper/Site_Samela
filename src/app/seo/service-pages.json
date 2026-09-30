@@ -1,0 +1,890 @@
+[
+  {
+    "slug": "contabilidade",
+    "name": "Contabilidade",
+    "navLabel": "Contabilidade",
+    "metaTitle": "Contabilidade para Empresas | Oliveira Contabilidade",
+    "metaDescription": "Contabilidade para empresas com rotina contábil organizada, demonstrações, obrigações acessórias e acompanhamento próximo para decisões mais seguras.",
+    "eyebrow": "Contabilidade empresarial",
+    "h1": "Contabilidade para empresas com organização, clareza e acompanhamento próximo.",
+    "lead": "Uma rotina contábil bem estruturada ajuda a empresa a manter informações confiáveis, cumprir obrigações e enxergar melhor o próprio negócio.",
+    "summary": "Na Oliveira Contabilidade, o trabalho contábil vai além do cumprimento de rotinas. O objetivo é organizar informações, acompanhar documentos e transformar os números da empresa em uma base mais clara para gestão e tomada de decisão.",
+    "highlights": [
+      "Rotina contábil e conciliações organizadas",
+      "Demonstrações e informações para acompanhamento",
+      "Obrigações acessórias e conformidade da rotina",
+      "Atendimento consultivo para dúvidas do dia a dia"
+    ],
+    "sections": [
+      {
+        "title": "O que faz parte do acompanhamento contábil",
+        "paragraphs": [
+          "O acompanhamento contábil reúne registros, conciliações, classificação das movimentações e preparação das informações necessárias para demonstrações e obrigações. Uma rotina consistente reduz retrabalho e melhora a qualidade dos dados utilizados pela empresa.",
+          "O atendimento também cria um ponto de apoio para interpretar informações contábeis e alinhar a documentação necessária ao longo do mês."
+        ],
+        "bullets": [
+          "Escrituração e organização da rotina contábil",
+          "Conciliações e conferências",
+          "Demonstrações contábeis",
+          "Acompanhamento de obrigações e documentos"
+        ]
+      },
+      {
+        "title": "Contabilidade como apoio à gestão",
+        "paragraphs": [
+          "Quando os registros estão organizados, a contabilidade pode oferecer uma visão mais consistente sobre patrimônio, resultado e movimentações da empresa. Isso facilita conversas sobre crescimento, estrutura, custos e planejamento.",
+          "A proposta é manter uma comunicação objetiva, para que o cliente entenda o que está sendo solicitado, entregue e acompanhado."
+        ],
+        "bullets": [
+          "Informações mais confiáveis para decisões",
+          "Visão organizada da evolução do negócio",
+          "Comunicação clara sobre pendências",
+          "Integração com rotinas fiscais e financeiras"
+        ]
+      },
+      {
+        "title": "Para quem este serviço faz sentido",
+        "paragraphs": [
+          "O serviço é indicado para empresas que precisam estruturar ou manter a rotina contábil em dia, especialmente negócios que cresceram, aumentaram o volume de movimentações ou querem ter mais clareza sobre as informações geradas pela contabilidade.",
+          "Também atende empreendedores que desejam uma relação mais próxima com o escritório contábil e suporte para entender os impactos das decisões empresariais."
+        ],
+        "bullets": [
+          "Pequenas e médias empresas",
+          "Empresas em fase de organização ou crescimento",
+          "Empreendedores que buscam acompanhamento consultivo",
+          "Negócios que precisam integrar contabilidade, fiscal e financeiro"
+        ]
+      },
+      {
+        "title": "Serviços contábeis e contabilidade empresarial no dia a dia",
+        "paragraphs": [
+          "Na prática, empresas que procuram serviços contábeis ou um contador para empresa geralmente precisam de uma combinação de escrituração, conciliações, demonstrações e acompanhamento de obrigações. O escopo deve acompanhar o porte e a complexidade da operação.",
+          "Uma boa gestão contábil também depende da qualidade dos documentos enviados e da integração com fiscal, departamento pessoal e financeiro, evitando informações desconectadas entre áreas."
+        ],
+        "bullets": [
+          "Contabilidade empresarial",
+          "Serviços contábeis recorrentes",
+          "Escrituração e conciliação contábil",
+          "Apoio contábil à gestão"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "O que está incluído em um serviço de contabilidade para empresas?",
+        "a": "A composição depende da realidade da empresa, mas normalmente envolve escrituração, conciliações, demonstrações, acompanhamento de documentos e obrigações contábeis. O diagnóstico inicial define o escopo adequado."
+      },
+      {
+        "q": "Posso trocar de contador e continuar a operação normalmente?",
+        "a": "Sim. A transição pode ser organizada com levantamento de documentos, acessos e obrigações para reduzir riscos de descontinuidade e identificar eventuais pendências."
+      },
+      {
+        "q": "A contabilidade ajuda na tomada de decisão?",
+        "a": "Informações contábeis bem organizadas podem apoiar a leitura de resultados, patrimônio e movimentações. A interpretação deve considerar também a realidade financeira e operacional da empresa."
+      },
+      {
+        "q": "Como funciona o primeiro atendimento?",
+        "a": "O primeiro contato serve para entender o negócio, o momento atual, o regime e as principais necessidades. A partir disso é possível definir documentos e próximos passos."
+      },
+      {
+        "q": "Como escolher um contador para minha empresa?",
+        "a": "Vale observar clareza na comunicação, organização dos processos, escopo do atendimento, experiência com a rotina da empresa e disponibilidade para explicar informações e pendências. O diagnóstico inicial ajuda a entender se o modelo de acompanhamento atende ao momento do negócio."
+      }
+    ],
+    "related": [
+      "bpo-financeiro",
+      "tributario",
+      "departamento-pessoal"
+    ],
+    "audience": [
+      "Empresas em operação",
+      "Pequenas e médias empresas",
+      "Empreendedores em fase de crescimento"
+    ],
+    "relatedTopics": [
+      "contabilidade empresarial",
+      "serviços contábeis",
+      "gestão contábil",
+      "contador para empresa",
+      "escrituração contábil",
+      "conciliação contábil"
+    ]
+  },
+  {
+    "slug": "bpo-financeiro",
+    "name": "BPO Financeiro",
+    "navLabel": "BPO financeiro",
+    "metaTitle": "BPO Financeiro para Empresas | Oliveira Contabilidade",
+    "metaDescription": "BPO financeiro para organizar contas a pagar e receber, fluxo de caixa, conciliações e relatórios, com mais clareza para a gestão da empresa.",
+    "eyebrow": "Gestão financeira terceirizada",
+    "h1": "BPO financeiro para organizar a rotina e dar mais clareza ao caixa da empresa.",
+    "lead": "Terceirize atividades financeiras operacionais e acompanhe contas, recebimentos, conciliações e fluxo de caixa com uma rotina mais estruturada.",
+    "summary": "O BPO financeiro ajuda a transformar tarefas dispersas em um processo recorrente de organização. A Oliveira Contabilidade estrutura a rotina conforme a necessidade do negócio para que informações financeiras fiquem mais acessíveis e úteis para a gestão.",
+    "highlights": [
+      "Contas a pagar e contas a receber",
+      "Conciliação de movimentações",
+      "Fluxo de caixa e acompanhamento de saldos",
+      "Relatórios para apoiar decisões"
+    ],
+    "sections": [
+      {
+        "title": "O que é BPO financeiro",
+        "paragraphs": [
+          "BPO financeiro é a terceirização organizada de atividades da rotina financeira. Em vez de concentrar controles em planilhas isoladas ou depender apenas da memória do dia a dia, a empresa passa a ter processos definidos para registrar, conferir e acompanhar movimentações.",
+          "O escopo pode variar conforme o porte, volume de transações e ferramentas utilizadas pelo cliente."
+        ],
+        "bullets": [
+          "Organização de contas a pagar",
+          "Controle de contas a receber",
+          "Conciliações financeiras",
+          "Acompanhamento de fluxo de caixa"
+        ]
+      },
+      {
+        "title": "Mais previsibilidade para a gestão",
+        "paragraphs": [
+          "Uma rotina financeira estruturada facilita a identificação de compromissos, recebimentos previstos e necessidades de caixa. Isso não substitui as decisões do gestor, mas oferece informações mais claras para que elas sejam tomadas com antecedência.",
+          "Relatórios periódicos também ajudam a acompanhar padrões, compromissos recorrentes e pontos que merecem atenção."
+        ],
+        "bullets": [
+          "Visibilidade de entradas e saídas",
+          "Acompanhamento de vencimentos",
+          "Redução de controles paralelos",
+          "Informações organizadas para planejamento"
+        ]
+      },
+      {
+        "title": "Quando considerar a terceirização financeira",
+        "paragraphs": [
+          "O BPO costuma fazer sentido quando o empreendedor passa muito tempo executando tarefas financeiras, quando existem atrasos e retrabalho ou quando a empresa precisa profissionalizar os controles sem estruturar imediatamente uma equipe interna completa.",
+          "Antes da implantação, é importante mapear o processo atual e definir responsabilidades, acessos e aprovações."
+        ],
+        "bullets": [
+          "Empresas com rotina financeira crescente",
+          "Negócios que precisam melhorar controles",
+          "Gestores que querem focar mais na operação",
+          "Empresas que buscam padronização e acompanhamento"
+        ]
+      },
+      {
+        "title": "Terceirização financeira e gestão financeira terceirizada",
+        "paragraphs": [
+          "A terceirização financeira pode concentrar rotinas como contas a pagar e receber, conciliação bancária, organização de documentos e acompanhamento do fluxo de caixa em um processo recorrente. Isso reduz controles paralelos e melhora a disponibilidade das informações para o gestor.",
+          "O BPO financeiro não retira a responsabilidade decisória da empresa. Autorizações, limites e regras de aprovação continuam definidos pelo cliente, enquanto a execução operacional segue o escopo acordado."
+        ],
+        "bullets": [
+          "Gestão financeira terceirizada",
+          "Contas a pagar e receber",
+          "Conciliação bancária",
+          "Controle e projeção de fluxo de caixa"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "BPO financeiro é a mesma coisa que contabilidade?",
+        "a": "Não. O BPO financeiro atua na rotina operacional financeira, como pagamentos, recebimentos, conciliações e controles. A contabilidade registra e organiza os fatos contábeis e cumpre obrigações próprias. Os serviços podem trabalhar de forma integrada."
+      },
+      {
+        "q": "O BPO financeiro faz pagamentos sozinho?",
+        "a": "O fluxo de aprovação deve ser definido com cada cliente. A empresa mantém os níveis de autorização e controle adequados à sua realidade, enquanto o BPO executa as atividades previstas no escopo contratado."
+      },
+      {
+        "q": "Quais informações preciso disponibilizar?",
+        "a": "Normalmente são necessários dados de contas bancárias, documentos financeiros, calendário de pagamentos, recebimentos e regras internas. O diagnóstico inicial define exatamente o que será compartilhado."
+      },
+      {
+        "q": "O BPO pode ajudar no fluxo de caixa?",
+        "a": "Sim. Uma das funções é organizar entradas e saídas e consolidar informações para acompanhamento do caixa, permitindo visualizar compromissos e recebimentos previstos com mais clareza."
+      },
+      {
+        "q": "Qual a diferença entre BPO financeiro e contratar um financeiro interno?",
+        "a": "No BPO, a empresa terceiriza atividades financeiras definidas em escopo e mantém as decisões e aprovações sob seu controle. Uma equipe interna é formada por profissionais contratados diretamente pela empresa. A escolha depende do volume, da complexidade e da estrutura desejada."
+      }
+    ],
+    "related": [
+      "contabilidade",
+      "tributario",
+      "contabilidade-para-profissionais-liberais"
+    ],
+    "audience": [
+      "Empresas com volume financeiro crescente",
+      "Gestores que precisam profissionalizar controles",
+      "Negócios sem equipe financeira interna completa"
+    ],
+    "relatedTopics": [
+      "BPO financeiro",
+      "terceirização financeira",
+      "gestão financeira terceirizada",
+      "contas a pagar e receber",
+      "fluxo de caixa",
+      "conciliação bancária"
+    ]
+  },
+  {
+    "slug": "departamento-pessoal",
+    "name": "Departamento Pessoal",
+    "navLabel": "Departamento pessoal",
+    "metaTitle": "Departamento Pessoal e Folha | Oliveira Contabilidade",
+    "metaDescription": "Departamento pessoal para admissões, folha de pagamento, férias, rescisões, encargos e obrigações trabalhistas com rotina organizada e acompanhamento.",
+    "eyebrow": "Rotinas trabalhistas",
+    "h1": "Departamento pessoal com organização para folha, admissões e obrigações trabalhistas.",
+    "lead": "Acompanhe os principais processos relacionados aos colaboradores com prazos, documentos e rotinas mais bem estruturados.",
+    "summary": "O departamento pessoal exige atenção a informações, documentos e prazos recorrentes. A Oliveira Contabilidade apoia a organização dessas rotinas para que admissões, folha, férias, rescisões e obrigações sejam conduzidas de forma consistente.",
+    "highlights": [
+      "Admissões e cadastros",
+      "Folha de pagamento",
+      "Férias e rescisões",
+      "Encargos e obrigações recorrentes"
+    ],
+    "sections": [
+      {
+        "title": "Rotina de folha e movimentações de colaboradores",
+        "paragraphs": [
+          "A gestão de pessoas gera eventos que precisam ser refletidos corretamente na rotina do departamento pessoal. Informações sobre admissões, remuneração, afastamentos, férias e desligamentos devem ser comunicadas e processadas dentro dos prazos aplicáveis.",
+          "Um fluxo definido entre empresa e contabilidade reduz omissões e facilita a conferência antes do fechamento."
+        ],
+        "bullets": [
+          "Processamento de folha",
+          "Admissões e desligamentos",
+          "Férias e afastamentos",
+          "Conferência de informações mensais"
+        ]
+      },
+      {
+        "title": "Prazos e obrigações organizados",
+        "paragraphs": [
+          "Além do cálculo da folha, existem encargos e obrigações que dependem das informações enviadas pela empresa. Por isso, calendário, responsáveis e canais de comunicação fazem parte de uma rotina eficiente.",
+          "O acompanhamento próximo também permite orientar sobre documentos e dados necessários antes de cada movimentação."
+        ],
+        "bullets": [
+          "Calendário de fechamentos",
+          "Acompanhamento de encargos",
+          "Organização documental",
+          "Orientação sobre informações necessárias"
+        ]
+      },
+      {
+        "title": "Para empresas com equipe ou primeiras contratações",
+        "paragraphs": [
+          "O serviço atende empresas que já possuem colaboradores e negócios que estão se preparando para contratar. Em ambos os casos, definir processos desde o início ajuda a manter registros e comunicações mais organizados.",
+          "Questões jurídicas específicas devem ser avaliadas com profissional habilitado na área trabalhista quando necessário."
+        ],
+        "bullets": [
+          "Empresas com colaboradores",
+          "Negócios realizando primeiras admissões",
+          "Empresas que precisam organizar a folha",
+          "Gestores que desejam rotina mensal mais previsível"
+        ]
+      },
+      {
+        "title": "Folha de pagamento, eSocial e rotinas de departamento pessoal",
+        "paragraphs": [
+          "Departamento pessoal envolve mais do que calcular a folha de pagamento. A rotina inclui admissões, férias, afastamentos, rescisões, encargos, informações trabalhistas e eventos transmitidos aos sistemas oficiais, sempre de acordo com os dados fornecidos pela empresa.",
+          "Quanto mais organizada é a comunicação sobre movimentações dos colaboradores, menor o risco de retrabalho, perda de prazos ou divergências entre folha, documentos e obrigações."
+        ],
+        "bullets": [
+          "Folha de pagamento",
+          "Admissões e movimentações de colaboradores",
+          "Férias, afastamentos e rescisões",
+          "Eventos e obrigações do eSocial"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "O departamento pessoal cuida da folha de pagamento?",
+        "a": "Sim. A folha é uma das principais rotinas, juntamente com admissões, férias, rescisões, afastamentos, encargos e obrigações relacionadas aos colaboradores."
+      },
+      {
+        "q": "Quando devo informar uma admissão?",
+        "a": "O ideal é comunicar a contratação com antecedência suficiente para coleta de documentos, cadastros e cumprimento dos prazos aplicáveis. A orientação específica é passada conforme o caso."
+      },
+      {
+        "q": "A empresa precisa enviar informações todos os meses?",
+        "a": "Sim. Eventos como horas, adicionais, faltas, afastamentos, férias e outras ocorrências precisam ser informados conforme a rotina definida para o fechamento."
+      },
+      {
+        "q": "Vocês também orientam empresas que ainda vão contratar?",
+        "a": "Sim. É possível organizar previamente o fluxo documental e as informações necessárias para a primeira admissão e para os fechamentos seguintes."
+      },
+      {
+        "q": "O departamento pessoal cuida das informações do eSocial?",
+        "a": "As rotinas de departamento pessoal normalmente incluem o tratamento e envio dos eventos trabalhistas aplicáveis ao eSocial, conforme as informações e documentos fornecidos pela empresa e as obrigações correspondentes ao vínculo dos colaboradores."
+      }
+    ],
+    "related": [
+      "contabilidade",
+      "societario",
+      "tributario"
+    ],
+    "audience": [
+      "Empresas com colaboradores",
+      "Negócios fazendo as primeiras contratações",
+      "Empresas que precisam organizar rotinas trabalhistas"
+    ],
+    "relatedTopics": [
+      "departamento pessoal",
+      "folha de pagamento",
+      "admissão de funcionários",
+      "férias e rescisões",
+      "encargos trabalhistas",
+      "eSocial"
+    ]
+  },
+  {
+    "slug": "tributario",
+    "name": "Tributário",
+    "navLabel": "Tributário",
+    "metaTitle": "Consultoria Tributária para Empresas | Oliveira Contabilidade",
+    "metaDescription": "Acompanhamento tributário para apuração de impostos, análise fiscal, obrigações e orientação sobre enquadramento com mais segurança e previsibilidade.",
+    "eyebrow": "Gestão tributária",
+    "h1": "Acompanhamento tributário para empresas com mais segurança e previsibilidade.",
+    "lead": "Organize apurações, obrigações e informações fiscais com orientação alinhada à realidade da empresa e às regras aplicáveis.",
+    "summary": "A rotina tributária envolve enquadramento, apuração, documentos e obrigações que precisam conversar com a operação real da empresa. A Oliveira Contabilidade acompanha esses pontos para reduzir inconsistências e melhorar a previsibilidade dos compromissos fiscais.",
+    "highlights": [
+      "Apuração de tributos",
+      "Análise da rotina fiscal",
+      "Acompanhamento de obrigações",
+      "Orientação sobre enquadramento e processos"
+    ],
+    "sections": [
+      {
+        "title": "Organização da rotina fiscal",
+        "paragraphs": [
+          "Uma rotina fiscal consistente começa com documentos corretos, classificação adequada das operações e conferência das informações utilizadas nas apurações. Quando esses elementos estão organizados, fica mais fácil identificar divergências e acompanhar os tributos do período.",
+          "O processo deve considerar o regime e as características efetivas da atividade exercida pela empresa."
+        ],
+        "bullets": [
+          "Conferência de documentos fiscais",
+          "Apuração conforme o regime aplicável",
+          "Acompanhamento de obrigações",
+          "Identificação de pendências e inconsistências"
+        ]
+      },
+      {
+        "title": "Planejamento com responsabilidade",
+        "paragraphs": [
+          "Planejamento tributário significa analisar alternativas legais e impactos antes de tomar decisões. Não se trata de prometer redução automática de impostos, mas de compreender enquadramento, operação e obrigações para escolher caminhos coerentes com a realidade do negócio.",
+          "Mudanças societárias, crescimento de faturamento e novas atividades são exemplos de situações que podem justificar uma nova análise."
+        ],
+        "bullets": [
+          "Revisão do enquadramento quando necessário",
+          "Análise de impactos de mudanças no negócio",
+          "Orientação para decisões com reflexo tributário",
+          "Previsibilidade de compromissos fiscais"
+        ]
+      },
+      {
+        "title": "Integração com contabilidade e financeiro",
+        "paragraphs": [
+          "As áreas fiscal, contábil e financeira se relacionam. Informações inconsistentes em uma delas podem afetar as demais, por isso a integração de processos e documentos é importante para manter uma visão coerente da empresa.",
+          "A Oliveira Contabilidade trabalha a rotina tributária em conjunto com as demais informações necessárias ao acompanhamento do cliente."
+        ],
+        "bullets": [
+          "Integração de informações",
+          "Comunicação sobre prazos e documentos",
+          "Acompanhamento consultivo",
+          "Visão mais organizada das obrigações"
+        ]
+      },
+      {
+        "title": "Consultoria tributária, apuração de impostos e planejamento",
+        "paragraphs": [
+          "A rotina tributária combina apuração de impostos, conferência de informações fiscais, cumprimento de obrigações e análise do enquadramento da empresa. Uma consultoria tributária responsável parte dos dados reais do negócio e das regras aplicáveis à atividade.",
+          "O planejamento tributário deve ser preventivo e documentado. O objetivo é avaliar alternativas legais, impactos e riscos antes de decisões societárias, operacionais ou financeiras, sem promessas de economia automática."
+        ],
+        "bullets": [
+          "Apuração de impostos",
+          "Análise e conferência fiscal",
+          "Avaliação de regime tributário",
+          "Planejamento tributário dentro da legislação"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Planejamento tributário significa sempre pagar menos imposto?",
+        "a": "Não. O objetivo é analisar a operação e as alternativas legais para encontrar um enquadramento coerente e reduzir riscos. O resultado depende da realidade de cada empresa."
+      },
+      {
+        "q": "Quando vale revisar o regime tributário?",
+        "a": "Mudanças de faturamento, atividade, estrutura societária ou operação podem justificar uma revisão. A análise deve ser feita com dados atualizados e dentro das regras aplicáveis."
+      },
+      {
+        "q": "O acompanhamento tributário inclui apuração de impostos?",
+        "a": "O escopo pode incluir apuração e obrigações fiscais conforme o serviço contratado e o regime da empresa. O diagnóstico inicial define o atendimento necessário."
+      },
+      {
+        "q": "Vocês analisam pendências fiscais?",
+        "a": "Podemos levantar informações e identificar pontos que precisam de regularização ou análise adicional, definindo os próximos passos conforme a situação encontrada."
+      },
+      {
+        "q": "Planejamento tributário é a mesma coisa que pagar menos imposto?",
+        "a": "Não. Planejamento tributário é a análise antecipada das regras e alternativas legais aplicáveis ao negócio. Em alguns casos pode existir eficiência tributária, mas a prioridade é escolher uma estrutura adequada, documentada e compatível com a operação."
+      }
+    ],
+    "related": [
+      "contabilidade",
+      "societario",
+      "bpo-financeiro"
+    ],
+    "audience": [
+      "Empresas com apuração recorrente de tributos",
+      "Negócios avaliando regime tributário",
+      "Empresas que buscam mais previsibilidade fiscal"
+    ],
+    "relatedTopics": [
+      "consultoria tributária",
+      "apuração de impostos",
+      "planejamento tributário",
+      "regime tributário",
+      "obrigações fiscais",
+      "análise fiscal"
+    ]
+  },
+  {
+    "slug": "societario",
+    "name": "Societário",
+    "navLabel": "Societário",
+    "metaTitle": "Societário e Abertura de Empresa | Oliveira Contabilidade",
+    "metaDescription": "Serviços societários para abertura, alteração, regularização e encerramento de empresas, com orientação para organizar cada etapa do processo empresarial.",
+    "eyebrow": "Serviços societários",
+    "h1": "Abertura, alteração e regularização de empresas com orientação em cada etapa.",
+    "lead": "Estruture decisões societárias e cadastrais com apoio para organizar documentos, registros e informações necessárias ao processo.",
+    "summary": "Mudanças na empresa exigem atenção a cadastros, documentos e reflexos contábeis e tributários. A Oliveira Contabilidade acompanha processos societários para que o empreendedor entenda o caminho, os documentos envolvidos e os próximos passos.",
+    "highlights": [
+      "Abertura de empresa",
+      "Alterações cadastrais e contratuais",
+      "Regularização empresarial",
+      "Encerramento e baixa de empresa"
+    ],
+    "sections": [
+      {
+        "title": "Abertura de empresa com planejamento inicial",
+        "paragraphs": [
+          "Antes de abrir uma empresa, é importante entender atividade, composição societária, expectativa de operação e necessidades cadastrais. Essas informações ajudam a estruturar o processo e evitar escolhas desconectadas da realidade do negócio.",
+          "O atendimento organiza as etapas e orienta sobre os documentos necessários para prosseguir com os registros aplicáveis."
+        ],
+        "bullets": [
+          "Levantamento inicial de informações",
+          "Orientação sobre documentos",
+          "Acompanhamento de registros",
+          "Integração com o início da rotina contábil e fiscal"
+        ]
+      },
+      {
+        "title": "Alterações e regularizações empresariais",
+        "paragraphs": [
+          "Empresas mudam ao longo do tempo. Entrada ou saída de sócios, alteração de atividades, endereço e outros dados podem exigir atualização cadastral e documental.",
+          "Quando há pendências, o primeiro passo é identificar a situação atual e organizar o que precisa ser ajustado antes de protocolar alterações."
+        ],
+        "bullets": [
+          "Alterações cadastrais",
+          "Alterações contratuais",
+          "Atualização de atividades",
+          "Levantamento de pendências para regularização"
+        ]
+      },
+      {
+        "title": "Encerramento com atenção às etapas finais",
+        "paragraphs": [
+          "O encerramento de uma empresa não deve ser tratado apenas como a baixa de um cadastro. É preciso verificar a situação da operação, obrigações e documentos antes de concluir o processo.",
+          "A análise prévia ajuda a identificar pontos que precisam ser resolvidos para conduzir o encerramento de forma organizada."
+        ],
+        "bullets": [
+          "Análise da situação cadastral",
+          "Organização das etapas de baixa",
+          "Acompanhamento documental",
+          "Orientação sobre obrigações relacionadas ao encerramento"
+        ]
+      },
+      {
+        "title": "Abertura de empresa, CNPJ e regularização societária",
+        "paragraphs": [
+          "A abertura de empresa envolve decisões sobre atividade, natureza jurídica, participação societária, endereço e cadastros necessários. Esses pontos influenciam etapas posteriores da contabilidade, tributação e contratação de pessoas.",
+          "Empresas já constituídas também podem precisar de alteração contratual, atualização cadastral, regularização societária ou encerramento. Cada processo exige conferência das informações e dos órgãos envolvidos."
+        ],
+        "bullets": [
+          "Abertura e constituição de empresa",
+          "Inscrições e CNPJ",
+          "Alterações contratuais e cadastrais",
+          "Regularização e encerramento empresarial"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quais informações são necessárias para abrir uma empresa?",
+        "a": "Os dados variam conforme a atividade e a estrutura escolhida. No diagnóstico inicial são levantadas informações sobre sócios, atividade, endereço e operação para definir a documentação necessária."
+      },
+      {
+        "q": "Posso alterar as atividades da empresa depois de aberta?",
+        "a": "Em muitos casos, sim, mas a alteração pode ter reflexos cadastrais, tributários e de licenciamento. É importante analisar a nova atividade antes de formalizar a mudança."
+      },
+      {
+        "q": "Vocês fazem regularização de empresas com pendências?",
+        "a": "O primeiro passo é levantar a situação e identificar quais pendências precisam de tratamento. A partir disso é possível definir o processo de regularização."
+      },
+      {
+        "q": "É possível encerrar uma empresa com obrigações pendentes?",
+        "a": "A situação deve ser analisada individualmente. Antes do encerramento, é importante verificar cadastros, obrigações e eventuais pendências para definir a sequência adequada."
+      },
+      {
+        "q": "O que preciso para começar a abertura de uma empresa?",
+        "a": "O primeiro passo é entender a atividade, a estrutura pretendida e quem participará da empresa. A documentação e os cadastros necessários variam conforme natureza jurídica, atividade e local de registro, por isso o diagnóstico inicial define a sequência adequada."
+      }
+    ],
+    "related": [
+      "contabilidade",
+      "tributario",
+      "departamento-pessoal"
+    ],
+    "audience": [
+      "Quem está abrindo uma empresa",
+      "Empresas em alteração ou reorganização",
+      "Negócios com pendências cadastrais ou societárias"
+    ],
+    "relatedTopics": [
+      "abertura de empresa",
+      "CNPJ",
+      "alteração contratual",
+      "regularização empresarial",
+      "encerramento de empresa",
+      "estrutura societária"
+    ]
+  },
+  {
+    "slug": "imposto-de-renda-pessoa-fisica",
+    "name": "Imposto de Renda Pessoa Física",
+    "navLabel": "IRPF",
+    "metaTitle": "Imposto de Renda Pessoa Física | Oliveira Contabilidade",
+    "metaDescription": "Declaração de Imposto de Renda Pessoa Física com análise de rendimentos, bens, deduções e documentos para preencher o IRPF com mais organização e segurança.",
+    "eyebrow": "IRPF",
+    "h1": "Imposto de Renda Pessoa Física com análise cuidadosa das suas informações.",
+    "lead": "Organize rendimentos, bens, investimentos, deduções e documentos para preparar a declaração com atenção aos dados informados.",
+    "summary": "A declaração de Imposto de Renda reúne informações de diferentes fontes e exige consistência entre documentos, rendimentos e patrimônio. A Oliveira Contabilidade apoia a organização e análise dos dados para preparar o IRPF de forma cuidadosa e esclarecer dúvidas durante o processo.",
+    "highlights": [
+      "Análise de documentos e informes",
+      "Rendimentos, bens e direitos",
+      "Deduções e informações relevantes",
+      "Orientação sobre pendências e documentação"
+    ],
+    "sections": [
+      {
+        "title": "Organização antes de preencher a declaração",
+        "paragraphs": [
+          "Separar informes de rendimentos, comprovantes, dados patrimoniais e documentos de operações realizadas ao longo do ano facilita a conferência e reduz o risco de deixar informações importantes de fora.",
+          "O atendimento começa com a identificação do perfil do contribuinte e dos documentos necessários para o caso."
+        ],
+        "bullets": [
+          "Informes de rendimentos",
+          "Bens e direitos",
+          "Investimentos e operações informadas",
+          "Comprovantes relacionados a deduções quando aplicáveis"
+        ]
+      },
+      {
+        "title": "Análise de consistência das informações",
+        "paragraphs": [
+          "A declaração deve refletir corretamente os dados do contribuinte e manter coerência com as informações disponíveis. Por isso, a conferência vai além de simplesmente copiar valores de um documento para o sistema.",
+          "Dúvidas sobre origem de valores, evolução patrimonial ou documentos ausentes são tratadas antes da entrega sempre que possível."
+        ],
+        "bullets": [
+          "Conferência dos dados recebidos",
+          "Identificação de informações faltantes",
+          "Revisão antes da transmissão",
+          "Orientação para guardar documentos"
+        ]
+      },
+      {
+        "title": "Atendimento para diferentes perfis de pessoa física",
+        "paragraphs": [
+          "O serviço pode atender contribuintes com rendimentos de trabalho, atividade autônoma, bens, investimentos ou outras situações que precisem ser declaradas, conforme as regras do período.",
+          "Casos com maior complexidade são avaliados individualmente para definir documentos e escopo do atendimento."
+        ],
+        "bullets": [
+          "Profissionais assalariados",
+          "Autônomos e profissionais liberais",
+          "Contribuintes com bens e investimentos",
+          "Pessoas que precisam organizar declarações e documentos"
+        ]
+      },
+      {
+        "title": "Declaração de Imposto de Renda com apoio profissional",
+        "paragraphs": [
+          "Quem procura um contador para Imposto de Renda normalmente busca apoio para reunir informes, conferir rendimentos, bens, investimentos, despesas dedutíveis e outras informações que precisam ser declaradas de forma consistente.",
+          "O trabalho não se limita ao preenchimento dos campos. A revisão dos documentos e o cruzamento das informações ajudam a reduzir erros de digitação, omissões e divergências que podem gerar questionamentos posteriores."
+        ],
+        "bullets": [
+          "Declaração de IRPF",
+          "Conferência de rendimentos e bens",
+          "Análise de deduções e documentos",
+          "Revisão de informações antes do envio"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quais documentos preciso enviar para fazer o Imposto de Renda?",
+        "a": "A lista depende do perfil do contribuinte. Normalmente são avaliados informes de rendimentos, documentos de bens, investimentos, pagamentos e outras informações relevantes para a declaração."
+      },
+      {
+        "q": "Vocês atendem profissionais autônomos no IRPF?",
+        "a": "Sim. Para autônomos, pode ser necessário analisar também rendimentos recebidos de pessoas físicas e a relação com o Carnê-Leão, conforme a situação do contribuinte."
+      },
+      {
+        "q": "Posso corrigir uma declaração já enviada?",
+        "a": "Existem situações em que uma declaração pode ser retificada. É necessário analisar o que precisa ser corrigido e as condições aplicáveis ao caso."
+      },
+      {
+        "q": "O atendimento inclui conferência antes do envio?",
+        "a": "Sim. As informações e documentos recebidos são organizados e revisados antes da transmissão, dentro do escopo do serviço contratado."
+      },
+      {
+        "q": "Quando vale a pena procurar um contador para o Imposto de Renda?",
+        "a": "O apoio profissional pode ser útil quando existem múltiplas fontes de renda, atividade autônoma, investimentos, compra e venda de bens, rendimentos do exterior, dúvidas sobre deduções ou necessidade de revisar declarações anteriores."
+      }
+    ],
+    "related": [
+      "carne-leao",
+      "contabilidade-para-profissionais-liberais",
+      "tributario"
+    ],
+    "audience": [
+      "Pessoas físicas com diferentes fontes de renda",
+      "Profissionais autônomos e liberais",
+      "Contribuintes com bens, investimentos ou operações a revisar"
+    ],
+    "relatedTopics": [
+      "declaração de Imposto de Renda",
+      "IRPF",
+      "contador para Imposto de Renda",
+      "rendimentos e bens",
+      "deduções do Imposto de Renda",
+      "regularização da declaração"
+    ]
+  },
+  {
+    "slug": "carne-leao",
+    "name": "Carnê-Leão",
+    "navLabel": "Carnê-Leão",
+    "metaTitle": "Carnê-Leão para Autônomos | Oliveira Contabilidade",
+    "metaDescription": "Carnê-Leão para autônomos e profissionais liberais: organização de rendimentos sujeitos à apuração mensal, despesas e informações para a rotina fiscal.",
+    "eyebrow": "Pessoa física e autônomos",
+    "h1": "Carnê-Leão para autônomos e profissionais liberais com rotina mensal organizada.",
+    "lead": "Acompanhe rendimentos sujeitos à apuração mensal, documentos e informações necessárias ao Carnê-Leão sem deixar tudo para o período do Imposto de Renda.",
+    "summary": "Para quem recebe rendimentos sujeitos ao Carnê-Leão, organizar as informações mês a mês facilita a apuração e a integração posterior com a declaração de Imposto de Renda. A Oliveira Contabilidade acompanha essa rotina com foco em registros, documentos e prazos.",
+    "highlights": [
+      "Organização mensal de rendimentos",
+      "Acompanhamento de documentos",
+      "Apuração conforme informações do contribuinte",
+      "Integração com a declaração de IRPF"
+    ],
+    "sections": [
+      {
+        "title": "Por que acompanhar o Carnê-Leão durante o ano",
+        "paragraphs": [
+          "Quando rendimentos e documentos são organizados apenas no fim do ano, aumenta a chance de informações ficarem incompletas ou difíceis de recuperar. O acompanhamento mensal cria uma rotina para registrar o que foi recebido e analisar os dados relevantes no período correto.",
+          "A necessidade de apuração depende da natureza dos rendimentos e da situação do contribuinte."
+        ],
+        "bullets": [
+          "Registro mensal de informações",
+          "Organização de comprovantes",
+          "Acompanhamento de períodos de apuração",
+          "Menos acúmulo de documentos para o IRPF"
+        ]
+      },
+      {
+        "title": "Carnê-Leão para profissionais autônomos",
+        "paragraphs": [
+          "Profissionais liberais e autônomos podem receber valores de pessoas físicas ao longo do mês. Dependendo do caso, esses rendimentos precisam ser considerados na rotina do Carnê-Leão.",
+          "O atendimento ajuda a separar informações pessoais e profissionais e a entender quais documentos devem ser mantidos para a apuração."
+        ],
+        "bullets": [
+          "Organização de recebimentos",
+          "Separação de documentos da atividade",
+          "Acompanhamento de informações mensais",
+          "Orientação sobre integração com IRPF"
+        ]
+      },
+      {
+        "title": "Integração com o Imposto de Renda",
+        "paragraphs": [
+          "As informações registradas ao longo do ano precisam estar coerentes com a declaração anual. Uma rotina organizada facilita a consolidação dos dados e a conferência antes do envio do IRPF.",
+          "Caso existam períodos anteriores sem acompanhamento, é possível avaliar a situação para identificar o que precisa ser revisado ou regularizado."
+        ],
+        "bullets": [
+          "Histórico mais organizado",
+          "Conferência de informações",
+          "Preparação para declaração anual",
+          "Análise de períodos com pendências"
+        ]
+      },
+      {
+        "title": "Carnê-Leão para autônomos e profissionais liberais",
+        "paragraphs": [
+          "O Carnê-Leão é uma apuração mensal que pode alcançar rendimentos recebidos por pessoa física em situações previstas na legislação. Para autônomos e profissionais liberais, acompanhar os recebimentos e despesas ao longo do ano evita deixar toda a organização para o período da declaração anual.",
+          "A análise deve considerar a origem dos rendimentos, os documentos disponíveis e as regras aplicáveis em cada mês. Quando houver imposto devido, também é importante observar os prazos de recolhimento e manter os registros organizados."
+        ],
+        "bullets": [
+          "Carnê-Leão para autônomos",
+          "Apuração mensal de rendimentos",
+          "Organização para emissão de DARF quando aplicável",
+          "Integração com a declaração anual de IRPF"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quem pode precisar do Carnê-Leão?",
+        "a": "A necessidade depende da origem e natureza dos rendimentos recebidos pela pessoa física. Autônomos e profissionais liberais que recebem determinados valores de pessoas físicas estão entre os perfis que podem precisar de apuração mensal."
+      },
+      {
+        "q": "Carnê-Leão é feito apenas uma vez por ano?",
+        "a": "Não. Ele está relacionado a uma rotina mensal de apuração para rendimentos sujeitos às regras aplicáveis. Por isso, o acompanhamento ao longo do ano tende a facilitar a organização."
+      },
+      {
+        "q": "Carnê-Leão e Imposto de Renda são a mesma coisa?",
+        "a": "Não. O Carnê-Leão é uma apuração mensal em situações específicas, enquanto a declaração anual de IRPF consolida diversas informações do contribuinte. Os dados precisam estar coerentes entre si."
+      },
+      {
+        "q": "Posso organizar períodos anteriores?",
+        "a": "É possível avaliar períodos anteriores e identificar informações ou apurações que precisem de revisão. O procedimento adequado depende da situação encontrada."
+      },
+      {
+        "q": "Quem recebe de pessoa física precisa avaliar o Carnê-Leão?",
+        "a": "Dependendo da natureza e da origem do rendimento, pode existir obrigação de apuração mensal pelo Carnê-Leão. A análise deve considerar o tipo de receita, quem efetuou o pagamento e as regras vigentes para o período."
+      }
+    ],
+    "related": [
+      "imposto-de-renda-pessoa-fisica",
+      "contabilidade-para-profissionais-liberais",
+      "tributario"
+    ],
+    "audience": [
+      "Profissionais autônomos",
+      "Profissionais liberais",
+      "Pessoas físicas com rendimentos sujeitos à apuração mensal"
+    ],
+    "relatedTopics": [
+      "Carnê-Leão",
+      "Carnê-Leão para autônomos",
+      "Carnê-Leão profissional liberal",
+      "rendimentos recebidos de pessoa física",
+      "apuração mensal de IR",
+      "DARF do Carnê-Leão"
+    ]
+  },
+  {
+    "slug": "contabilidade-para-profissionais-liberais",
+    "name": "Contabilidade para Profissionais Liberais",
+    "navLabel": "Profissionais liberais",
+    "metaTitle": "Contabilidade para Profissionais Liberais | Oliveira Contabilidade",
+    "metaDescription": "Contabilidade para profissionais liberais e autônomos com orientação sobre organização fiscal, Carnê-Leão, IRPF e estrutura empresarial quando aplicável.",
+    "eyebrow": "Autônomos e profissionais liberais",
+    "h1": "Contabilidade para profissionais liberais que querem organizar impostos, finanças e crescimento.",
+    "lead": "Tenha uma visão mais clara das obrigações da pessoa física e das possibilidades de estruturação profissional conforme sua realidade.",
+    "summary": "Profissionais liberais lidam ao mesmo tempo com atendimento aos clientes, recebimentos, despesas e obrigações fiscais. A Oliveira Contabilidade oferece acompanhamento para organizar essa rotina e avaliar, conforme o caso, temas como Carnê-Leão, IRPF e estrutura empresarial.",
+    "highlights": [
+      "Organização fiscal da atividade",
+      "Carnê-Leão e IRPF",
+      "Análise de rotina financeira",
+      "Orientação sobre estrutura empresarial quando aplicável"
+    ],
+    "sections": [
+      {
+        "title": "Pessoa física e atividade profissional organizada",
+        "paragraphs": [
+          "Quando a atividade é exercida como pessoa física, é importante separar documentos e acompanhar os rendimentos da atuação profissional. Dependendo da origem dos recebimentos, podem existir rotinas mensais que não devem ser deixadas apenas para a declaração anual.",
+          "O acompanhamento ajuda a estruturar um calendário e manter as informações da atividade mais acessíveis."
+        ],
+        "bullets": [
+          "Organização de rendimentos",
+          "Rotina de Carnê-Leão quando aplicável",
+          "Preparação para IRPF",
+          "Separação de documentos profissionais"
+        ]
+      },
+      {
+        "title": "Quando avaliar uma estrutura empresarial",
+        "paragraphs": [
+          "Conforme a atividade cresce, pode fazer sentido analisar se a atuação como empresa se alinha melhor ao momento profissional. Essa decisão deve considerar faturamento, despesas, atividade, custos e regras aplicáveis, sem partir de uma resposta única para todos.",
+          "A análise pode incluir abertura de empresa e organização da nova rotina contábil, fiscal e financeira quando essa for a alternativa adequada."
+        ],
+        "bullets": [
+          "Análise do momento profissional",
+          "Comparação de estruturas possíveis",
+          "Abertura de empresa quando adequada",
+          "Implantação de rotina contábil e fiscal"
+        ]
+      },
+      {
+        "title": "Mais clareza para administrar a atividade",
+        "paragraphs": [
+          "Mesmo em uma operação individual, ter controles financeiros básicos ajuda a acompanhar recebimentos, compromissos e períodos de maior ou menor movimento. Isso também facilita a preparação das informações necessárias à contabilidade e aos impostos.",
+          "Para profissionais com maior volume de transações, o BPO financeiro pode ser avaliado como complemento à organização da rotina."
+        ],
+        "bullets": [
+          "Controle de recebimentos",
+          "Organização de despesas e documentos",
+          "Planejamento de compromissos",
+          "Integração com BPO financeiro quando necessário"
+        ]
+      },
+      {
+        "title": "Contabilidade para autônomos e profissionais liberais",
+        "paragraphs": [
+          "Profissionais liberais e autônomos podem ter necessidades que misturam pessoa física, Carnê-Leão, Imposto de Renda, organização financeira e, em determinados momentos, avaliação sobre abertura de CNPJ. O acompanhamento deve considerar a forma real de atuação do profissional.",
+          "A análise integrada ajuda a separar finanças pessoais e profissionais, organizar documentos e entender quando uma estrutura empresarial pode ou não fazer sentido, sempre considerando atividade, faturamento, custos e regras aplicáveis."
+        ],
+        "bullets": [
+          "Organização da atividade profissional",
+          "Carnê-Leão e IRPF para autônomos",
+          "Avaliação de pessoa física ou pessoa jurídica",
+          "Apoio para abertura e rotina de CNPJ quando aplicável"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Profissional liberal precisa de contador?",
+        "a": "A necessidade varia conforme a forma de atuação e a complexidade da rotina fiscal. O acompanhamento contábil pode ajudar a organizar obrigações, documentos e decisões sobre pessoa física ou estrutura empresarial."
+      },
+      {
+        "q": "Autônomo precisa fazer Carnê-Leão?",
+        "a": "Alguns rendimentos recebidos por pessoa física estão sujeitos a apuração mensal. É preciso analisar a origem dos valores e a situação específica do profissional."
+      },
+      {
+        "q": "Quando vale a pena abrir uma empresa?",
+        "a": "Não existe um único limite que resolva todos os casos. Faturamento, atividade, despesas, clientes e estrutura devem ser analisados em conjunto antes de decidir."
+      },
+      {
+        "q": "Vocês atendem também o Imposto de Renda do profissional?",
+        "a": "Sim. O atendimento pode integrar a organização da atividade ao IRPF, incluindo a conferência das informações acumuladas ao longo do ano."
+      },
+      {
+        "q": "Profissional liberal precisa abrir CNPJ?",
+        "a": "Não necessariamente. A necessidade e a conveniência de atuar como pessoa jurídica dependem da atividade, faturamento, custos, clientes, regras profissionais e tributação. A comparação deve ser feita com os dados reais antes de decidir."
+      }
+    ],
+    "related": [
+      "carne-leao",
+      "imposto-de-renda-pessoa-fisica",
+      "bpo-financeiro"
+    ],
+    "audience": [
+      "Profissionais liberais",
+      "Autônomos que querem organizar a atividade",
+      "Profissionais avaliando atuar como pessoa física ou jurídica"
+    ],
+    "relatedTopics": [
+      "contabilidade para profissionais liberais",
+      "contabilidade para autônomos",
+      "Carnê-Leão",
+      "IRPF para autônomos",
+      "abertura de CNPJ",
+      "organização financeira profissional"
+    ]
+  }
+]
